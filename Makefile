@@ -1,22 +1,21 @@
-CC = gcc
-CFLAGS = -Wall -g
 PREFIX = /usr/local
+BINDIR = $(PREFIX)/bin
+SCRIPT = dan
 TARGET = dan
-SOURCE = dan.c operations.c
-
-all: $(TARGET)
+.PHONY = install uninstall
 
 dan: $(SOURCE)
-	$(CC) $(CFLAGS) $(SOURCE) -o $@
-
-clean: 
-	rm -f $(TARGET)
+	echo "umm, it's a shell script. no need to make"
 
 install: $(TARGET)
-	mkdir -p $(DESTDIR)$(PREFIX)/bin
-	rm -f $(DESTDIR)$(PREFIX)/bin/$(TARGET)
-	cp -f $(TARGET) $(DESTDIR)$(PREFIX)/bin
-	chmod 755 $(DESTDIR)$(PREFIX)/bin/$(TARGET)
+	@echo "Installing $(SCRIPT) to $(BINDIR)/$(TARGET)"
+	mkdir -p $(BINDIR)
+	rm -f $(BINDIR)/$(TARGET)
+	cp -f $(SCRIPT) $(BINDIR)/$(TARGET)
+	chmod 755 $(BINDIR)/$(TARGET)
+	@echo "Installation complete."
 
 uninstall:
-	rm -f $(DESTDIR)$(PREFIX)/bin/$(TARGET)
+	@echo "Removing $(BINDIR)/$(TARGET)"
+	rm -f $(BINDIR)/$(TARGET)
+	@echo "Removation complete."
