@@ -2,8 +2,8 @@
 |								DAN 								| 
 |		a tiny scripts used to ease	your dotfile management			|
 +-------------------------------------------------------------------+
-Dan is a dotfile manager with purpose for personal use. If you found 
-it useful, leave a star for the repo ;D
+Dan is a very minimal dotfile manager with purpose for personal use. 
+If you found it useful, don't hesitate to leave a star!
 
 
 === Features
@@ -26,9 +26,14 @@ time as the project grows and develops:
 
 === Background
 =========
+I was a person who often changing window manager and even the distro.
+That's the reason for the need of a dotfile manager. I've used stow,
+but doesn't fit with my use case. I don't like symlinking folder or 
+files, I prefer copy-paste system. That's when this program first
+written.
 The code is inspired by my previous dotfile manager, DotMan. 
 But it had too many bugs, so i abandoned it. And now i'm recreating
-the dotfile manager, but in C.
+the dotfile manager, implented in bash.
 
 
 === Installation
@@ -39,9 +44,13 @@ Systems:
 	- Linux
 	You need to have git and gcc installed on your system.
 	Step-by-step installation on linux:
+
 		- Open your terminal, and then paste command below (one by one)
+
 		- git clone https://github.com/ahmadinne/dan.git; cd dan
+
 		- sudo make install
+
 	There you go, Dan is ready to use!
 
 
