@@ -5,7 +5,7 @@ TARGET = dan
 .PHONY = install uninstall
 
 dan: $(SOURCE)
-	echo "umm, it's a shell script. no need to make"
+	echo "bash scripts, can't compile."
 
 install: $(TARGET)
 	@echo "Installing $(SCRIPT) to $(BINDIR)/$(TARGET)"

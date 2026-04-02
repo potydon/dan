@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
+# 
+# Managing dotfiles easier
+#
+# Author: Fikriansyah Ahmadinejad <pointers@cock.li>
+# Date: March 31, 2026
+# License: ISC
 
 # Variables
 OPTION="$1"
