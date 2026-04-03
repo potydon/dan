@@ -6,6 +6,10 @@
 # Date: March 31, 2026
 # License: ISC
 
+# TODO: 
+# - when applying, grep the directory path before the last dir or file. Then mkdir -p them. This to fix fail when applying because there's no path for copying.
+# - when init, if the directory already have .dan files, do not attempt to create again. Instead tell you if it's an existing dan directory, and you can apply from there.
+
 # Variables
 OPTION="$1"
 shift # shift arguments so $@ only contains the choices
