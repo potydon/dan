@@ -1,8 +1,8 @@
 +-------------------------------------------------------------------+
-|								DAN 								| 
-|		a tiny scripts used to ease	your dotfile management			|
+|																DAN 																|
+|				a tiny scripts used to ease	your dotfile management					|
 +-------------------------------------------------------------------+
-Dan is a very minimal dotfile manager with purpose for personal use. 
+Dan is a very minimal dotfile manager with purpose for personal use.
 If you found it useful, don't hesitate to leave a star!
 
 
@@ -26,14 +26,15 @@ time as the project grows and develops:
 
 === Background
 =========
-I was a person who often changing window manager and even the distro.
-That's the reason for the need of a dotfile manager. I've used stow,
-but doesn't fit with my use case. I don't like symlinking folder or 
-files, I prefer copy-paste system. That's when this program first
-written.
-The code is inspired by my previous dotfile manager, DotMan. 
-But it had too many bugs, so i abandoned it. And now i'm recreating
-the dotfile manager, implented in bash.
+I'm a person who often reinstall the OS, just because it feels slow.
+That's the reason why i need a dotfile manager. I've used stow, but
+it doesn't fit with my use case. I don't like the system it uses,
+symlinking folder and files. I prefer copy-paste system. That's when
+this program first written.
+The code is heavily inspired by my previous attempt to create the
+simple dotfile manager, DotMan.
+But it had too many bugs, so i rewrite it. And here we are with it,
+a minimal script that can manage your dotfiles.
 
 
 === Installation
@@ -42,16 +43,26 @@ Here are some installation tutorial step-by-step for some Operating
 Systems:
 
 	- Linux
-	You need to have git and gcc installed on your system.
+	You need to have bash, git and make installed on your system.
 	Step-by-step installation on linux:
 
 		- Open your terminal, and then paste command below (one by one)
 
-		- git clone https://github.com/ahmadinne/dan.git; cd dan
+		- git clone https://github.com/potydon/dan; cd dan
 
 		- sudo make install
 
-	There you go, Dan is ready to use!
+
+	- Windows 11
+	You need to have powershell and git installed on your system.
+	Step-by-step installation on windows 11:
+
+		- Open your windows terminal / command prompt, then paste These
+			command below
+
+		-	git clone https://github.com/potydon/dan; cd dan
+
+		-	./install.ps1
 
 
 === Inspiration
@@ -61,11 +72,9 @@ projects:
 
 	- GNU Stow (https://www.gnu.org/software/stow)
 
-	- DotMan (https://github.com/ahmadinne/dotman)
-
 	- Tin-Can Linux (https://tincan-linux.github.io/)
 
 
 _________________________________________________________________________
 
-pointers (C) 2025-2026
+potydon (C) 2026
