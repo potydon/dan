@@ -11,17 +11,17 @@ If you found it useful, don't hesitate to leave a star!
 Here are some of the features we had for now. These may change over
 time as the project grows and develops:
 
-	- Sync
+  - Sync
 
-	- Apply
+  - Apply
 
-	- Sync all
+  - Sync all
 
-	- Apply all
+  - Apply all
 
-	- Remove
+  - Remove
 
-	- List
+  - List
 
 
 === Background
@@ -42,27 +42,27 @@ a minimal script that can manage your dotfiles.
 Here are some installation tutorial step-by-step for some Operating
 Systems:
 
-	- Linux
-	You need to have bash, git and make installed on your system.
-	Step-by-step installation on linux:
+  - Linux
+  You need to have bash, git and make installed on your system.
+  Step-by-step installation on linux:
 
-		- Open your terminal, and then paste command below (one by one)
+    - Open your terminal, and then paste command below (one by one)
 
-		- git clone https://github.com/potydon/dan; cd dan
+    - git clone https://github.com/potydon/dan; cd dan
 
-		- sudo make install
+    - sudo make install
 
 
-	- Windows 11
-	You need to have powershell and git installed on your system.
-	Step-by-step installation on windows 11:
+  - Windows 11
+  You need to have powershell and git installed on your system.
+  Step-by-step installation on windows 11:
 
-		- Open your windows terminal / command prompt, then paste These
-			command below
+    - Open your windows terminal / command prompt, then paste These
+      command below
 
-		-	git clone https://github.com/potydon/dan; cd dan
+    -	git clone https://github.com/potydon/dan; cd dan
 
-		-	./install.ps1
+    -	./install.ps1
 
 
 === Inspiration
@@ -70,9 +70,9 @@ Systems:
 Dan was inspired by and made possibly by the following amazing
 projects:
 
-	- GNU Stow (https://www.gnu.org/software/stow)
+  - GNU Stow (https://www.gnu.org/software/stow)
 
-	- Tin-Can Linux (https://tincan-linux.github.io/)
+  - Tin-Can Linux (https://tincan-linux.github.io/)
 
 
 _________________________________________________________________________
