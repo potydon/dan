@@ -13,7 +13,8 @@ $Targets = if ($args.Count -gt 1) { $args[1..($args.Count - 1)] } else { @() }
 
 # Helpers
 function expand_tilde([string]$p) {
-	$p -replace '^~', $HOME.Replace('$', '$$')
+	$p = $p -replace '^~', $HOME.Replace('$', '$$')
+    $p -replace '[\\/]', [IO.Path]::DirectorySeparatorChar
 }
 
 function to_tilde([string]$p) {
@@ -300,7 +301,7 @@ commands (without arguments)
 function version {
 	@'
 Dan v1.0.0 - powershell
-Copyright (C) 2025-2026 @Pointers
+Copyright (C) 2025-2026 @Potydon
 
 This program may be freely redistributed under
 the terms of the ISC License.
